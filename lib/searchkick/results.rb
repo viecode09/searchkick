@@ -140,7 +140,7 @@ module Searchkick
     protected
 
     def hits
-      @response["hits"]["hits"]
+      @response["hits"]["hits"] rescue []
     end
 
   end
